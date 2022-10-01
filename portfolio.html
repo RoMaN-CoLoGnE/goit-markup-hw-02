@@ -8,132 +8,128 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
-  <body class="body">
+  <body class="portfolio__page">
     <!-- Шапка -->
     <header class="header">
       <!-- Навигация -->
-      <nav class="nav">
-        <a class="logo" href="./index.html"
-          ><span class="logo__part-one">Web</span><span class="logo__part-two">Studio</span></a
-        >
-        <ul class="nav__list">
-          <li class="nav__item nav__item--current">
-            <a class="nav__link" href="./index.html">Студія</a>
+      <nav class="navigation">
+        <a class="header__logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="item__link" href="./index.html">Студія</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+          <li class="navigation__item">
+            <a class="item__link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакти</a>
+          <li class="navigation__item">
+            <a class="item__link" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
       <!-- эл.почта и телефон -->
-      <ul class="contact__list">
-        <li class="contact__item">
-          <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a class="item__link mail__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="contact__item">
-          <a class="contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="contacts__item">
+          <a class="item__link tel__link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
-    <!-- Основной контент, портфолио компании-->
+    <!-- Основной контент -->
     <main class="main">
+      <!-- Скрытый заголовок -->
+      <h1>Features</h1>
       <!-- Кнопки фильтра проектов портфолио-->
-      <section class="main__features-filter">
-        <ul class="main__features--filter-list">
-          <li class="main__features--filter-item">
-            <button class="main__features--filter-btn" type="button">Усі</button>
+      <section class="portfolio__filter">
+        <ul class="filter__list">
+          <li class="filter__item">
+            <button class="item__button" type="button">Усі</button>
           </li>
-          <li class="main__features--filter-item">
-            <button class="main__features--filter-btn" type="button">Веб-сайти</button>
+          <li class="filter__item">
+            <button class="item__button" type="button">Веб-сайти</button>
           </li>
-          <li class="main__features--filter-item">
-            <button class="main__features--filter-btn" type="button">Додатки</button>
+          <li class="filter__item">
+            <button class="item__button" type="button">Додатки</button>
           </li>
-          <li class="main__features--filter-item">
-            <button class="main__features--filter-btn" type="button">Дизайн</button>
+          <li class="filter__item">
+            <button class="item__button" type="button">Дизайн</button>
           </li>
-          <li class="main__features--filter-item">
-            <button class="main__features--filter-btn" type="button">Маркетинг</button>
+          <li class="filter__item">
+            <button class="item__button" type="button">Маркетинг</button>
           </li>
         </ul>
       </section>
       <!-- Проекты компании -->
-      <section class="main__features">
-        <ul class="main__features--list">
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic1.jpg" alt="" />
-            <h2 class="main__features--item-title">Технокряк</h2>
-            <p class="main__features--item-text">Веб-сайт</p>
+      <section class="portfolio__cards">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic1.jpg" alt="" />
+            <h2 class="item__title">Технокряк</h2>
+            <p class="item__text">Веб-сайт</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic2.jpg" alt="" />
-            <h2 class="main__features--item-title">Постер New Orlean vs Golden Star</h2>
-            <p class="main__features--item-text">Дизайн</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic2.jpg" alt="" />
+            <h2 class="item-title">Постер New Orlean vs Golden Star</h2>
+            <p class="item-text">Дизайн</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic3.jpg" alt="" />
-            <h2 class="main__features--item-title">Ресторан Seafood</h2>
-            <p class="main__features--item-text">Додаток</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic3.jpg" alt="" />
+            <h2 class="item__title">Ресторан Seafood</h2>
+            <p class="item__text">Додаток</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic4.jpg" alt="" />
-            <h2 class="main__features--item-title">Проєкт Prime</h2>
-            <p class="main__features--item-text">Маркетинг</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic4.jpg" alt="" />
+            <h2 class="item__title">Проєкт Prime</h2>
+            <p class="item__text">Маркетинг</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic5.jpg" alt="" />
-            <h2 class="main__features--item-title">Проєкт Boxes</h2>
-            <p class="main__features--item-text">Додаток</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic5.jpg" alt="" />
+            <h2 class="item__title">Проєкт Boxes</h2>
+            <p class="item__text">Додаток</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic6.jpg" alt="" />
-            <h2 class="main__features--item-title">Inspiration has no Borders</h2>
-            <p class="main__features--item-text">Веб-сайт</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic6.jpg" alt="" />
+            <h2 class="item__title">Inspiration has no Borders</h2>
+            <p class="item__text">Веб-сайт</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic7.jpg" alt="" />
-            <h2 class="main__features--item-title">Видання Limited Edition</h2>
-            <p class="main__features--item-text">Дизайн</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic7.jpg" alt="" />
+            <h2 class="item__title">Видання Limited Edition</h2>
+            <p class="item__text">Дизайн</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic8.jpg" alt="" />
-            <h2 class="main__features--item-title">Проєкт LAB</h2>
-            <p class="main__features--item-text">Маркетинг</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic8.jpg" alt="" />
+            <h2 class="item__title">Проєкт LAB</h2>
+            <p class="item__text">Маркетинг</p>
           </li>
-          <li class="main__features--item">
-            <img class="main__features--item-pic" src="./images/jpg/portfolio-pic9.jpg" alt="" />
-            <h2 class="main__features--item-title">Growing Business</h2>
-            <p class="main__features--item-text">Додаток</p>
+          <li class="cards__item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic9.jpg" alt="" />
+            <h2 class="item__title">Growing Business</h2>
+            <p class="item__text">Додаток</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="logo__part-one">Web</span><span class="logo__part-two">Studio</span></a
-      >
-      <address class="footer__address">
-        <ul class="footer__address--list">
-          <li class="footer__address--item">
+      <a class="footer__logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
+      <address class="address">
+        <ul class="address__list">
+          <li class="address__item">
             <a
-              class="footer__adress--item-link"
+              class="item-link map__link"
               href="https://goo.gl/maps/8viNXfXdV3uJQZfFA"
               target="_blank"
               rel="noopener noreferrer nofollow"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li class="footer__address--item">
-            <a class="footer__adress--item-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="address__item">
+            <a class="item-link mail__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="footer__address--item">
-            <a class="footer__adress--item-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="address__item">
+            <a class="item-link tel__link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
