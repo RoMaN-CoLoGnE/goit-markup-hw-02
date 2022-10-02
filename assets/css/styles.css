@@ -3,6 +3,260 @@
   padding: 0;
 }
 
-.main__page {
-  font-family: Raleway, Roboto;
+:root {
+  --primere-text-color: #757575;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primere-text-color);
+}
+
+.header__logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.header__logo .logo__part {
+  color: #000000;
+}
+
+.navigation__list,
+.contacts__list {
+  font-weight: 500;
+  line-height: 1.14;
+  list-style-type: none;
+}
+
+.navigation .item__link {
+  text-decoration: none;
+  color: #212121;
+}
+
+.navigation .item__link:hover {
+  color: #2196f3;
+}
+
+.navigation .item__link:focus {
+  color: #2196f3;
+}
+
+.mail__link {
+  text-decoration: none;
+  color: #757575;
+}
+
+.mail__link:hover {
+  color: #2196f3;
+}
+
+.mail__link:focus {
+  color: #2196f3;
+}
+
+.tel__link {
+  text-decoration: none;
+  color: #757575;
+}
+
+.tel__link:hover {
+  color: #2196f3;
+}
+
+.tel__link:focus {
+  color: #2196f3;
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__button {
+  width: 216px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.89;
+  color: #ffffff;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.features__title {
+  display: none;
+}
+
+.features__list {
+  list-style-type: none;
+}
+
+.features__item .item__title {
+  font-weight: 700px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.features__item .item__text {
+  line-height: 1.7;
+  color: var(--primere-text-color);
+}
+
+.gallery__list {
+  list-style-type: none;
+}
+
+.gallery__title,
+.our-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: #212121;
+}
+
+.our-team__list {
+  list-style-type: none;
+}
+
+.our-team__item {
+  line-height: 1.18;
+  text-align: center;
+}
+
+.our-team__item .item__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.footer__logo .logo__part {
+  color: #ffffff;
+}
+
+.address__list {
+  list-style-type: none;
+}
+
+.address__item .map__link {
+  line-height: 1.7;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.map__link:hover {
+  color: #2196f3;
+}
+
+.map__link:focus {
+  color: #2196f3;
+}
+
+.address__item .mail__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item .mail__link:hover {
+  color: #2196f3;
+}
+
+.address__item .mail__link:focus {
+  color: #2196f3;
+}
+
+.address__item .tel__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item .tel__link:hover {
+  color: #2196f3;
+}
+
+.address__item .tel__link:focus {
+  color: #2196f3;
+}
+
+.portfolio__title {
+  display: none;
+}
+
+.filter__list {
+  list-style-type: none;
+}
+
+.filter__item .item__button {
+  width: 112px;
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter__item .item__button:hover {
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+
+.filter__item .item__button:focus {
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+
+.portfolio__cards .cards__list {
+  list-style-type: none;
+}
+
+.portfolio__cards .cards__item .item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+}
+
+.portfolio__cards .cards__item .item__text {
+  font-size: 16px;
+  line-height: 1.87;
 }
