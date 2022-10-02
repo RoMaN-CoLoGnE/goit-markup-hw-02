@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
+/* Переменная преобладающего цвета текста на сайте */
 :root {
   --primere-text-color: #757575;
 }
-
+/* Глобальные стили сайта */
 .body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--primere-text-color);
 }
-
-.header__logo {
+/* Общая стилизация логотипов в шапке и подвале */
+.header__logo, .footer__logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -21,57 +21,60 @@
   color: #2196f3;
   text-decoration: none;
 }
-
+/* Стили части логотипа в шапке */
 .header__logo .logo__part {
   color: #000000;
 }
-
+/* Общая стилизация навигации и контактов в шапке */
 .navigation__list,
 .contacts__list {
   font-weight: 500;
   line-height: 1.14;
-  list-style-type: none;
+  list-style-type: none; 
 }
-
+/* Стили ссылок навигации */
 .navigation .item__link {
   text-decoration: none;
   color: #212121;
 }
-
-.navigation .item__link:hover {
-  color: #2196f3;
-}
-
+/* Изменения цвета при наведении мышки или фокусе тастатурой на ссылки */
+.navigation .item__link:hover,
 .navigation .item__link:focus {
   color: #2196f3;
 }
 
+/* .navigation .item__link:focus {
+  color: #2196f3;
+} */
+/* Стили ссылок контактов */
 .mail__link {
   text-decoration: none;
   color: #757575;
 }
 
-.mail__link:hover {
-  color: #2196f3;
-}
-
+.mail__link:hover,
 .mail__link:focus {
   color: #2196f3;
 }
+
+/* .mail__link:focus {
+  color: #2196f3;
+} */
 
 .tel__link {
   text-decoration: none;
   color: #757575;
 }
 
-.tel__link:hover {
-  color: #2196f3;
-}
-
+.tel__link:hover,
 .tel__link:focus {
   color: #2196f3;
 }
 
+/* .tel__link:focus {
+  color: #2196f3;
+} */
+/* Временный задний цвет, фон для видимости логотипа */
 .hero {
   background-color: #2f303a;
 }
@@ -102,7 +105,7 @@
   display: inline-block;
   cursor: pointer;
 }
-
+/* Скрытый заголовок секции Особенности */
 .features__title {
   display: none;
 }
@@ -126,7 +129,7 @@
 .gallery__list {
   list-style-type: none;
 }
-
+/* Общая стилизация заголовков секций галерея и наша команда */
 .gallery__title,
 .our-team__title {
   font-weight: 700;
@@ -135,7 +138,7 @@
   text-align: center;
   color: #212121;
 }
-
+/* Срытие точек списка */
 .our-team__list {
   list-style-type: none;
 }
@@ -150,20 +153,20 @@
   font-size: 16px;
   color: #212121;
 }
-
+/* Временный задний цвет, фон для видимости логотипа  */
 .footer {
   background-color: #2f303a;
 }
 
-.footer__logo {
+/* .footer__logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: #2196f3;
   text-decoration: none;
-}
-
+} */
+/* Стили части логотипа в подвале */
 .footer__logo .logo__part {
   color: #ffffff;
 }
@@ -178,38 +181,41 @@
   color: #ffffff;
 }
 
-.map__link:hover {
-  color: #2196f3;
-}
-
+.map__link:hover,
 .map__link:focus {
   color: #2196f3;
 }
+
+/* .map__link:focus {
+  color: #2196f3;
+} */
 
 .address__item .mail__link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__item .mail__link:hover {
-  color: #2196f3;
-}
-
+.address__item .mail__link:hover,
 .address__item .mail__link:focus {
   color: #2196f3;
 }
+
+/* .address__item .mail__link:focus {
+  color: #2196f3;
+} */
 
 .address__item .tel__link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__item .tel__link:hover {
-  color: #2196f3;
-}
-
+.address__item .tel__link:hover,
 .address__item .tel__link:focus {
   color: #2196f3;
 }
 
+/* .address__item .tel__link:focus {
+  color: #2196f3;
+} */
+/* Скрытый заголовок портфолио */
 .portfolio__title {
   display: none;
 }
@@ -217,7 +223,7 @@
 .filter__list {
   list-style-type: none;
 }
-
+/* Общие стили кнопок фильтра портфолио */
 .filter__item .item__button {
   width: 112px;
   height: 38px;
@@ -230,14 +236,8 @@
   color: #212121;
   cursor: pointer;
 }
-
-.filter__item .item__button:hover {
-  background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
-}
-
+/* Стили псевдо-классов состояния кнопок фильтра портфолио */
+.filter__item .item__button:hover,
 .filter__item .item__button:focus {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -245,10 +245,17 @@
   color: #ffffff;
 }
 
+/* .filter__item .item__button:focus {
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+} */
+
 .portfolio__cards .cards__list {
   list-style-type: none;
 }
-
+/* Общие стили карточек портфолио */
 .portfolio__cards .cards__item .item__title {
   font-weight: 700;
   font-size: 18px;
