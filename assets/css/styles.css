@@ -1,11 +1,13 @@
+/* Переменные */
+:root {
+  --primere-text-color: #757575;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-/* Переменная преобладающего цвета текста на сайте */
-:root {
-  --primere-text-color: #757575;
-}
+
 /* Глобальные стили сайта */
 .body {
   font-family: 'Roboto', sans-serif;
@@ -13,7 +15,7 @@
   color: var(--primere-text-color);
 }
 /* Общая стилизация логотипов в шапке и подвале */
-.header__logo, .footer__logo {
+.navigation__logo, .footer__logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -22,58 +24,33 @@
   text-decoration: none;
 }
 /* Стили части логотипа в шапке */
-.header__logo .logo__part {
+.navigation__logo .logo__part {
   color: #000000;
 }
 /* Общая стилизация навигации и контактов в шапке */
-.navigation__list,
-.contacts__list {
+.navigation__list, .contacts {
   font-weight: 500;
   line-height: 1.14;
-  list-style-type: none; 
+  list-style-type: none;
 }
 /* Стили ссылок навигации */
-.navigation .item__link {
+.header .item__link {
   text-decoration: none;
   color: #212121;
 }
 /* Изменения цвета при наведении мышки или фокусе тастатурой на ссылки */
-.navigation .item__link:hover,
-.navigation .item__link:focus {
+.header .item__link:hover,
+.header .item__link:focus {
   color: #2196f3;
 }
 
-/* .navigation .item__link:focus {
-  color: #2196f3;
-} */
-/* Стили ссылок контактов */
-.mail__link {
-  text-decoration: none;
+.contacts .link__mail {
   color: #757575;
 }
 
-.mail__link:hover,
-.mail__link:focus {
-  color: #2196f3;
-}
-
-/* .mail__link:focus {
-  color: #2196f3;
-} */
-
-.tel__link {
-  text-decoration: none;
+.contacts .link__phone {
   color: #757575;
 }
-
-.tel__link:hover,
-.tel__link:focus {
-  color: #2196f3;
-}
-
-/* .tel__link:focus {
-  color: #2196f3;
-} */
 /* Временный задний цвет, фон для видимости логотипа */
 .hero {
   background-color: #2f303a;
@@ -88,7 +65,7 @@
   color: #ffffff;
 }
 
-.hero__button {
+.hero .button {
   width: 216px;
   height: 50px;
   background-color: #2196f3;
@@ -105,8 +82,8 @@
   display: inline-block;
   cursor: pointer;
 }
-/* Скрытый заголовок секции Особенности */
-.features__title {
+/* Скрытые заголовки */
+.title__hidden {
   display: none;
 }
 
@@ -114,14 +91,14 @@
   list-style-type: none;
 }
 
-.features__item .item__title {
+.features__list .item__title {
   font-weight: 700px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
 }
 
-.features__item .item__text {
+.features__list .item__paragraph {
   line-height: 1.7;
   color: var(--primere-text-color);
 }
@@ -143,12 +120,12 @@
   list-style-type: none;
 }
 
-.our-team__item {
+.our-team__list .list__item {
   line-height: 1.18;
   text-align: center;
 }
 
-.our-team__item .item__title {
+.our-team__list .item__title {
   font-weight: 500;
   font-size: 16px;
   color: #212121;
@@ -157,15 +134,6 @@
 .footer {
   background-color: #2f303a;
 }
-
-/* .footer__logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #2196f3;
-  text-decoration: none;
-} */
 /* Стили части логотипа в подвале */
 .footer__logo .logo__part {
   color: #ffffff;
@@ -175,56 +143,42 @@
   list-style-type: none;
 }
 
-.address__item .map__link {
+.address__list .link__map {
   line-height: 1.7;
   text-decoration: none;
   color: #ffffff;
 }
 
-.map__link:hover,
-.map__link:focus {
+.link__map:hover,
+.link__map:focus {
   color: #2196f3;
 }
 
-/* .map__link:focus {
-  color: #2196f3;
-} */
-
-.address__item .mail__link {
+.address__list .link__mail {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__item .mail__link:hover,
-.address__item .mail__link:focus {
+.address__list .link__mail:hover,
+.address__list .link__mail:focus {
   color: #2196f3;
 }
 
-/* .address__item .mail__link:focus {
-  color: #2196f3;
-} */
-
-.address__item .tel__link {
+.address__list .link__phone {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__item .tel__link:hover,
-.address__item .tel__link:focus {
+.address__list .link__phone:hover,
+.address__list .link__phone:focus {
   color: #2196f3;
-}
-
-/* .address__item .tel__link:focus {
-  color: #2196f3;
-} */
-/* Скрытый заголовок портфолио */
-.portfolio__title {
-  display: none;
 }
 
 .filter__list {
   list-style-type: none;
 }
 /* Общие стили кнопок фильтра портфолио */
-.filter__item .item__button {
+.filter__list .button {
   width: 112px;
   height: 38px;
   background-color: #f5f4fa;
@@ -237,33 +191,26 @@
   cursor: pointer;
 }
 /* Стили псевдо-классов состояния кнопок фильтра портфолио */
-.filter__item .item__button:hover,
-.filter__item .item__button:focus {
+.filter__list .button:hover,
+.filter__list .button:focus {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
 }
-
-/* .filter__item .item__button:focus {
-  background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
-} */
 
 .portfolio__cards .cards__list {
   list-style-type: none;
 }
 /* Общие стили карточек портфолио */
-.portfolio__cards .cards__item .item__title {
+.portfolio__cards .list__item .item__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: #212121;
 }
 
-.portfolio__cards .cards__item .item__text {
+.portfolio__cards .list__item .item__paragraph {
   font-size: 16px;
   line-height: 1.87;
 }
