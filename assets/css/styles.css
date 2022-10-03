@@ -1,8 +1,14 @@
 :root {
   --basic-grey-color: #757575;
+  --secondary-grey-color: #f5f4fa;
+  --deep-black-color: #000000;
   --basic-black-color: #212121;
+  --secondary-black-color: #2f303a;
   --basic-blu-color: #2196f3;
-  --basic-white-color: #FFFFFF;
+  --secondary-blu-color: #188ce8;
+  --basic-white-color: #ffffff;
+  --secondary-white-color: #f5f5f5;
+  --alternative-white-color: #eeeeee;
 }
 
 * {
@@ -13,8 +19,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--basic-grey-color);
-  background-color: #F5F5F5;
+  background-color: var(--secondary-white-color);
 }
 
 .header {
@@ -26,19 +33,20 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-decoration: none;
   color: var(--basic-blu-color);
 }
 
 .navigation__logo .logo__part {
-  color: #000000;
+  color: var(--deep-black-color);
 }
 
 .navigation__list,
 .contacts {
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   list-style-type: none;
 }
 
@@ -62,7 +70,7 @@ body {
 }
 /* Временный задний цвет, фон для видимости логотипа */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-black-color);
 }
 
 .hero__title {
@@ -71,6 +79,7 @@ body {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--basic-white-color);
 }
 
@@ -84,6 +93,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.89;
+  letter-spacing: 0.06em;
   color: var(--basic-white-color);
   padding: 10px 32px;
   text-align: center;
@@ -95,7 +105,7 @@ body {
 .hero .button:hover,
 .hero .button:focus,
 .hero .button:active {
-  background-color: #188CE8;
+  background-color: var(--secondary-blu-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Скрытые заголовки */
@@ -108,14 +118,14 @@ body {
 }
 
 .features__list .item__title {
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--basic-black-color);
 }
 
 .features__list .item__paragraph {
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--basic-grey-color);
 }
 
@@ -133,7 +143,7 @@ body {
 }
 
 .our-team {
-  background-color: #F5F4FA;;
+  background-color: var(--secondary-grey-color);
 }
 
 .our-team__list {
@@ -141,14 +151,19 @@ body {
 }
 
 .our-team__list .list__item {
-  line-height: 1.18;
   text-align: center;
 }
 
 .our-team__list .item__title {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.18;
   color: var(--basic-black-color);
+}
+
+.our-team__list .item__paragraph {
+  font-size: 16px;
+  line-height: 1.18;
 }
 /* Временный задний цвет, фон для видимости логотипа  */
 .footer {
@@ -164,7 +179,8 @@ body {
 }
 
 .address__list .link__map {
-  line-height: 1.7;
+  font-style: normal;
+  line-height: 1.71;
   text-decoration: none;
   color: var(--basic-white-color);
 }
@@ -204,11 +220,11 @@ body {
 .filter__list .button {
   width: 112px;
   height: 38px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-grey-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.63;
   text-align: center;
   color: var(--basic-black-color);
   cursor: pointer;
@@ -225,16 +241,24 @@ body {
 
 .portfolio__cards .cards__list {
   list-style-type: none;
+  background-color: var(--basic-white-color);
+  border: 1px solid var(--alternative-white-color);
 }
 
-.portfolio__cards .list__item .item__title {
+.portfolio__cards .item__link {
+  text-decoration: none;
+}
+
+.portfolio__cards .link__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--basic-black-color);
 }
 
-.portfolio__cards .list__item .item__paragraph {
+.portfolio__cards .link__paragraph {
   font-size: 16px;
   line-height: 1.87;
+  color: var(--basic-grey-color);
 }
