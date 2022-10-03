@@ -119,7 +119,7 @@ body {
 .features__list {
   list-style-type: none;
 }
-/*TODO Почему стили заданные <body> не распространились на эти заголовки (Размер шрифта) */
+/*TODO Почему стили заданные <body> не распространились на эти заголовки (Размер шрифта) и пришлось его прописывать здесь отдельно? */
 .features__list .item__title {
   font-weight: 700;
   font-size: 14px;
@@ -180,7 +180,7 @@ body {
 
 .address__list {
   list-style-type: none;
-   font-style: normal;
+  font-style: normal;
 }
 
 .address__list .link__map {
