@@ -1,5 +1,8 @@
 :root {
-  --primere-text-color: #757575;
+  --basic-grey-color: #757575;
+  --basic-black-color: #212121;
+  --basic-blu-color: #2196f3;
+  --basic-white-color: #FFFFFF;
 }
 
 * {
@@ -7,20 +10,25 @@
   padding: 0;
 }
 
-.body {
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: var(--primere-text-color);
+  color: var(--basic-grey-color);
+  background-color: #F5F5F5;
+}
+
+.header {
+  background-color: var(--basic-white-color);
 }
 
 .navigation__logo,
 .footer__logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #2196f3;
   text-decoration: none;
+  color: var(--basic-blu-color);
 }
 
 .navigation__logo .logo__part {
@@ -36,20 +44,21 @@
 
 .header .item__link {
   text-decoration: none;
-  color: #212121;
+  color: var(--basic-black-color);
 }
 
 .header .item__link:hover,
-.header .item__link:focus {
-  color: #2196f3;
+.header .item__link:focus,
+.header .item__link:active {
+  color: var(--basic-blu-color);
 }
 
 .contacts .link__mail {
-  color: #757575;
+  color: var(--basic-grey-color);
 }
 
 .contacts .link__phone {
-  color: #757575;
+  color: var(--basic-grey-color);
 }
 /* Временный задний цвет, фон для видимости логотипа */
 .hero {
@@ -62,25 +71,32 @@
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--basic-white-color);
 }
 
 .hero .button {
   width: 216px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: var(--basic-blu-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.89;
-  color: #ffffff;
+  color: var(--basic-white-color);
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Скрытые заголовки */
 .title__hidden {
@@ -95,12 +111,12 @@
   font-weight: 700px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--basic-black-color);
 }
 
 .features__list .item__paragraph {
   line-height: 1.7;
-  color: var(--primere-text-color);
+  color: var(--basic-grey-color);
 }
 
 .gallery__list {
@@ -113,7 +129,11 @@
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  color: #212121;
+  color: var(--basic-black-color);
+}
+
+.our-team {
+  background-color: #F5F4FA;;
 }
 
 .our-team__list {
@@ -128,7 +148,7 @@
 .our-team__list .item__title {
   font-weight: 500;
   font-size: 16px;
-  color: #212121;
+  color: var(--basic-black-color);
 }
 /* Временный задний цвет, фон для видимости логотипа  */
 .footer {
@@ -136,7 +156,7 @@
 }
 
 .footer__logo .logo__part {
-  color: #ffffff;
+  color: var(--basic-white-color);
 }
 
 .address__list {
@@ -146,12 +166,13 @@
 .address__list .link__map {
   line-height: 1.7;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--basic-white-color);
 }
 
 .link__map:hover,
-.link__map:focus {
-  color: #2196f3;
+.link__map:focus,
+.link__map:active {
+  color: var(--basic-blu-color);
 }
 
 .address__list .link__mail {
@@ -160,8 +181,9 @@
 }
 
 .address__list .link__mail:hover,
-.address__list .link__mail:focus {
-  color: #2196f3;
+.address__list .link__mail:focus,
+.address__list .link__mail:active {
+  color: var(--basic-blu-color);
 }
 
 .address__list .link__phone {
@@ -170,8 +192,9 @@
 }
 
 .address__list .link__phone:hover,
-.address__list .link__phone:focus {
-  color: #2196f3;
+.address__list .link__phone:focus,
+.address__list .link__phone:active {
+  color: var(--basic-blu-color);
 }
 
 .filter__list {
@@ -187,16 +210,17 @@
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: #212121;
+  color: var(--basic-black-color);
   cursor: pointer;
 }
 
 .filter__list .button:hover,
-.filter__list .button:focus {
-  background-color: #2196f3;
+.filter__list .button:focus,
+.filter__list .button:active {
+  background-color: var(--basic-blu-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
+  color: var(--basic-white-color);
 }
 
 .portfolio__cards .cards__list {
@@ -207,7 +231,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: #212121;
+  color: var(--basic-black-color);
 }
 
 .portfolio__cards .list__item .item__paragraph {
