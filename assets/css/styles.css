@@ -23,7 +23,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--basic-grey-color);
-  background-color: var(--secondary-white-color);
+  background-color: var(--basic-white-color);
 }
 
 .header {
@@ -156,6 +156,8 @@ body {
 
 .our-team__list .list__item {
   text-align: center;
+  color: var(--basic-white-color);
+  background-color: var(--basic-white-color);
 }
 
 .our-team__list .item__title {
@@ -221,7 +223,7 @@ body {
   list-style-type: none;
 }
 
-.filter__list .button {
+.list__filter .button {
   /* width: 112px;
   height: 38px; */
   background-color: var(--secondary-grey-color);
@@ -235,26 +237,23 @@ body {
   cursor: pointer;
 }
 
-.filter__list .button:hover,
-.filter__list .button:focus,
-.filter__list .button:active {
+.list__filter .button:hover,
+.list__filter .button:focus,
+.list__filter .button:active {
   background-color: var(--basic-blu-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--basic-white-color);
 }
 
-.portfolio__cards .cards__list {
+.list__cards .item__link {
+  text-decoration: none;
   list-style-type: none;
   background-color: var(--basic-white-color);
   border: 1px solid var(--alternative-white-color);
 }
 
-.portfolio__cards .item__link {
-  text-decoration: none;
-}
-
-.portfolio__cards .link__title {
+.list__cards .link__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -262,7 +261,7 @@ body {
   color: var(--basic-black-color);
 }
 
-.portfolio__cards .link__paragraph {
+.list__cards .link__paragraph {
   font-size: 16px;
   line-height: 1.87;
   color: var(--basic-grey-color);
