@@ -156,7 +156,7 @@ body {
 
 .our-team__list .list__item {
   text-align: center;
-  color: var(--basic-white-color);
+  color: var(--basic-grey-color);
   background-color: var(--basic-white-color);
 }
 
@@ -219,7 +219,7 @@ body {
   color: var(--basic-blu-color);
 }
 
-.filter__list {
+.list__filter {
   list-style-type: none;
 }
 
@@ -246,11 +246,13 @@ body {
   color: var(--basic-white-color);
 }
 
+.list__cards {
+  list-style-type: none;
+}
+
 .list__cards .item__link {
   text-decoration: none;
-  list-style-type: none;
   background-color: var(--basic-white-color);
-  border: 1px solid var(--alternative-white-color);
 }
 
 .list__cards .link__title {
